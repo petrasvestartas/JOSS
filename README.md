@@ -2,57 +2,75 @@
 
 A key goal of JOSS is to raise the quality of research software.
 
-## Software guidelines
+## Software Guidelines
 
-The following text is a summary of the [JOSS guidelines](https://joss.readthedocs.io/)
+The following is a summary of the [JOSS guidelines](https://joss.readthedocs.io/).
 
-### General Checks
+### General checks
 
-- [ ] is the source code for the software is available at the repository url?
-- [ ] does the repository contains plain-text LICENSE or COPYING license file: https://opensource.org/license?
-- [ ] The authors list is checked and determined by the commit history. Purely financial contributions are not considered as authorship
+- [ ] Is the source code for the software available at the repository URL?
+- [ ] Does the repository contain a plain-text LICENSE or COPYING file (see https://opensource.org/licenses)?
+- [ ] Is the author list determined from the commit history? Note: purely financial contributions do not constitute authorship.
 
 ### Functionality
 
-- [ ] installation - does installation proceed as outlined in the documentation?
-- [ ] functionality - have the functional claims of the software been confirmed?
-- [ ] performance - if there are any performance claims of the software, have they been confirmed?
+- [ ] Installation: does installation proceed as outlined in the documentation?
+- [ ] Functionality: have the functional claims of the software been confirmed?
+- [ ] Performance: if there are any performance claims, have they been validated?
 
 ### Documentation
 
-- [ ] A statement of need - the authors should clearly state what problems the software is designed to solve, who the target audience is, and its relation to the other work.
-- [ ] Installation instructions - the software is simple to install, including dependencies, and follows established distribution approached e.g. pip install for Python and makefile for Fortran. Reviewers are expected to install the software they are reviewing and to verify the core functionality of the software
-- [ ] Examples - the authors should include examples of how to use the software (ideally to solve real-world analysis problems)
-- [ ] Functionality documentation - API - All classes, functions, are documented including examples inputs and outputs
-- [ ] Authors are strongly encourage to include an automated test suite covering the core functionality of their software. An automated test suite hooked up to continouos integration (GitHub Actions, Circle CI, or similar). Explanation how to run the tests.
-- [ ] Community guidelines - there should be clear guidelines for third-parties to: a) contribute to the software, b) repost issues or problems with the software, c) seek support.
-- [ ] Documentation format - a website or a list of markdown files
-- [ ] README - with a high-level (for non specialists) overview of the software
-- [ ] Issues - a reviewer can make issues of a GitHub repository, therefore it is a good idea to have github issue templates
+- [ ] Statement of need: do the authors clearly state what problems the software is designed to solve, who the target audience is, and its relation to other work?
+- [ ] Installation instructions: is the software simple to install, including dependencies, and does it follow established distribution approaches (e.g., pip for Python, Makefile for Fortran)? Reviewers are expected to install the software they are reviewing and to verify core functionality.
+- [ ] Examples: do the authors include examples of how to use the software (ideally to solve real-world analysis problems)?
+- [ ] Functionality documentation (API): are all classes and functions documented, including example inputs and outputs?
+- [ ] Tests: do the authors include an automated test suite covering core functionality, integrated with continuous integration (e.g., GitHub Actions, CircleCI), and instructions for running the tests?
+- [ ] Community guidelines: are there clear guidelines for third parties to a) contribute to the software, b) report issues or problems, and c) seek support?
+- [ ] Documentation format: a website or a set of Markdown files.
+- [ ] README: a high-level overview (for non-specialists) of the software.
+- [ ] Issues: does the repository provide GitHub issue templates to help reviewers open issues?
 
-### Substantial Scholarly Effort
+### Substantial scholarly effort
 
-- [ ] age of a software (is this a  well-established software project)
-- [ ] number of commits
-- [ ] number of authors
-- [ ] line of code (LOC)
-- [ ] Whether the software has already been cited in academic papers
-- [ ] Whether the software is sufficiently useful that it is likely to be cited by other researchers in the working domain
+- [ ] Age of the software: is this a well-established project (at least 3 months old)?
+- [ ] Feature completeness: is the software feature-complete (i.e., not a half-baked solution) and designed for maintainable extension (not a one-off modification of existing tools)? Minor utilities and thin API wrappers are not acceptable.
+- [ ] Number of commits
+- [ ] Number of authors
+- [ ] Lines of code (LOC)
+- [ ] Has the software already been cited in academic papers?
+- [ ] Is the software sufficiently useful that it is likely to be cited by other researchers in the domain?
 
 ### Novelty
 
-- [ ] Submissions that implement solutions already solved in other software packages must be cited.
+- [ ] Are existing software packages that solve similar problems cited?
+- [ ] Does the paper avoid focusing on new research results accomplished with the software?
+- [ ] Does the software enable new research challenges to be addressed, or make addressing them significantly better (e.g., faster, easier, simpler)?
 
-## Paper should have
+## The paper should include
 
-- [ ] Summary - Has a clear description of the high-level functionality and purpose of the software for a diverse, non-specialist audience been provided?
-- [ ] A statement of need - Does the paper have a section titled "Statement of need" that clearly states what problesm the sofware is desiegned to solve, who the target audiece is, and its relation to the other work?
-- [ ] State of the field - Do the authors describe how this software compares to other commonly-used packages?
-- [ ] Quality of writing - Is the paper well written (e.g. it does not require editing for structure, language or writing quality)?
-- [ ] References - Is the list of references complete, and is everything cited appropriately that should be cited (e.g. papers, datasets, software)? Do references in the use the proper citation syntax - https://pandoc.org/MANUAL.html#citations
-- [ ] Authors - a list of the authors of the software and their affiliations
-- [ ] Use cases - mentions of any ongoing research projects using the software or recent scholarly publications enabled by it
+### Paper structure
 
+- [ ] The paper is between 250–1000 words.
+- [ ] Authors: list of the software authors and their affiliations.
+- [ ] Summary: a clear description of the high-level functionality and purpose of the software for a diverse, non-specialist audience.
+- [ ] Statement of need: a section titled “Statement of need” that clearly states what problems the software is designed to solve, who the target audience is, and its relation to other work.
+- [ ] State of the field: description of how the software compares to commonly used packages.
+- [ ] Quality of writing: the paper is well written (does not require editing for structure, language, or writing quality).
+- [ ] References: the reference list is complete, with appropriate citations (e.g., papers, datasets, software), using proper citation syntax (https://pandoc.org/MANUAL.html#citations). References should include full names of venues (e.g., journals and conferences), not abbreviations only understood within a specific discipline.
+- [ ] Use cases: mentions of ongoing research projects using the software or recent scholarly publications enabled by it.
+- [ ] Acknowledgements: of any financial support.
+- [ ] Style: https://joss.readthedocs.io/en/latest/paper.html
+- [ ] Compilation to PDF: https://github.com/marketplace/actions/open-journals-pdf-generator
 
+### Paper submission
 
+- [ ] Ensure your software is publicly available and includes all necessary documentation and guidelines.
+- [ ] Use the `paper.md` and `paper.bib` templates.
+- [ ] Generate metadata using the `generate_metadata` script.
+- [ ] Fill out the submission form: https://joss.theoj.org/papers/new
+- [ ] Wait for the managing editor to start a pre-review issue in the JOSS Reviews repository: https://github.com/openjournals/joss-reviews
 
+### Paper hosting
+
+- [ ] The paper (`paper.md` and BibTeX files, plus any figures) must be hosted in a Git-based repository together with your software.
+- [ ] The paper may live on a short-lived branch that is never merged with the default branch; if you do this, make sure the branch is created from the default so that it includes the source code of your submission.
